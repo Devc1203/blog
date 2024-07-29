@@ -29,8 +29,8 @@
       ];
 
       // i 파라미터 값으로 주소 선택, 기본 값은 첫 번째 주소
-      var index = parseInt(params.i) || 1;
-      var baseUrl = urls[index] || urls[0];
+      var index = parseInt(params.i);
+      var baseUrl = urls[index];
 
       // i 파라미터를 제외한 나머지 파라미터들을 쿼리 스트링으로 구성
       var queryParams = Object.keys(params)
