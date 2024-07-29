@@ -24,7 +24,7 @@
       var redirectUrl = "https://www.coupang.com/np/search"; // 기본 리디렉션 URL
       if (params.param) {
         // 파라미터가 있을 경우 리디렉션 URL에 추가
-        redirectUrl += "?param=" + encodeURIComponent(params.param);
+        redirectUrl += "?q=" + encodeURIComponent(params.param);
       }
       window.location.href = redirectUrl;
     }
